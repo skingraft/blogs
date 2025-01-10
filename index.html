@@ -10,7 +10,8 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #87CEFA, #FFFFFF);
+            background: linear-gradient(to bottom, #1c1c3c, #000000);
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
         }
         header {
             background: linear-gradient(90deg, #FF5733, #FFC300);
@@ -19,19 +20,23 @@
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        nav {
+        .nav-buttons {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            gap: 10px;
             margin: 1rem 0;
         }
-        nav a {
-            margin: 0 1rem;
+        .nav-buttons a {
             text-decoration: none;
-            color: #FF5733;
-            transition: color 0.3s ease;
+            color: white;
+            background: #3c3c99;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
         }
-        nav a:hover {
-            color: #FFC300;
+        .nav-buttons a:hover {
+            background: #5c5cff;
         }
         .container {
             max-width: 800px;
@@ -45,14 +50,16 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
         .blog-section:nth-child(odd) {
-            background: #FFCCCC;
+            background: #1c1c3c;
+            color: white;
         }
         .blog-section:nth-child(even) {
-            background: #CCFFCC;
+            background: #3c3c99;
+            color: white;
         }
         .blog-section h2 {
-            color: #0000FF;
-            border-bottom: 2px solid #0000FF;
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
             padding-bottom: 0.5rem;
         }
         .blog-box {
@@ -83,8 +90,9 @@
         form {
             margin: 2rem 0;
             padding: 1rem;
-            background: #f2f2f2;
+            background: #1c1c3c;
             border-radius: 5px;
+            color: white;
         }
         form input, form textarea, form button {
             width: 100%;
@@ -92,6 +100,10 @@
             margin: 0.5rem 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+        }
+        form input, form textarea {
+            background: #333333;
+            color: white;
         }
         form button {
             background: #FF5733;
@@ -110,7 +122,18 @@
         <h1>Health Experience Blogs</h1>
         <p>Find and share real-life experiences with different health challenges.</p>
     </header>
-    <nav>
+    <div class="container">
+        <form action="https://formsubmit.co/example" method="POST">
+            <label for="bloglink">Blog Link:</label>
+            <input type="text" id="bloglink" name="bloglink" required>
+
+            <label for="description">Brief Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit Blog</button>
+        </form>
+    </div>
+    <div class="nav-buttons">
         <a href="#adhd">ADHD</a>
         <a href="#alzheimer">Alzheimer's</a>
         <a href="#anorexia">Anorexia & Bulimia</a>
@@ -126,7 +149,7 @@
         <a href="#ms">Multiple Sclerosis</a>
         <a href="#skingraft">Skin Graft</a>
         <a href="#stroke">Stroke</a>
-    </nav>
+    </div>
     <div class="container">
         <div id="adhd" class="blog-section">
             <h2>ADHD</h2>
@@ -159,15 +182,6 @@
         <div id="cancer" class="blog-section">
             <h2>Cancer</h2>
             <p><strong>Explore blogs about living with and overcoming cancer shared by others.</strong></p>
-
-            <div class="blog-box">
-                <a href="https://joehyunblogger.blogspot.com/" target="_blank">https://joehyunblogger.blogspot.com/</a>
-                <p>This is blog by Joe Hyun who was diagnosed with acute lymphoblastic leukemia, B-Cell, 
-                    related to the gene mutation called Philadelphia chromosome.
-                    He received a stem cell transplant and journals his stay in the hospital. </p>
-            </div>
-
-            
         </div>
         <div id="depression" class="blog-section">
             <h2>Depression</h2>
@@ -191,35 +205,15 @@
         </div>
         <div id="skingraft" class="blog-section">
             <h2>Skin Graft</h2>
-            <p><strong>Read blogs about skin graft experiences contributed by our users.</strong></p>
+            <p><strong>Share and read blogs about skin graft experiences contributed by our users.</strong></p>
             <div class="blog-box">
                 <a href="https://www.myskingraft.com" target="_blank">www.myskingraft.com</a>
-                <p>This blog, written by a young woman, shares her journey after burning her knees one evening. 
-                    It documents her experience with the NHS skin grafting process and chronicles the changes she observed over days,
-                    months, and a year post-surgery. The blog includes numerous photos showcasing the progression of her skin's healing
-                    and transformation.</p>
+                <p>This blog shares an inspiring journey of receiving skin grafts on knees after burning them with boiling water.</p>
             </div>
         </div>
         <div id="stroke" class="blog-section">
             <h2>Stroke</h2>
             <p><strong>Personal stories of stroke recovery and resilience.</strong></p>
-        </div>
-
-        
-
-
-
-        <div class="submit-blog">
-            <p>Have a blog to share? Use the form below to submit your story!</p>
-            <form action="https://formsubmit.co/maggie11235@gmail.com" method="POST">
-                <label for="bloglink">Blog Link:</label>
-                <input type="text" id="bloglink" name="bloglink" required>
-
-                <label for="description">Brief Description:</label>
-                <textarea id="description" name="description" rows="4" required></textarea>
-
-                <button type="submit">Submit Blog</button>
-            </form>
         </div>
     </div>
     <footer>
@@ -228,7 +222,7 @@
 </body>
 </html>
 
-        <p>&copy; 2025 Health Experience Blogs. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+
+
+
+      
