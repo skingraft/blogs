@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Experience Blogs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-section {
+            margin: 2rem 0;
+        }
+        .blog-section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #4CAF50;
+            color: white;
+            margin-top: 2rem;
+        }
+        .submit-blog {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .submit-blog a {
+            background: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .submit-blog a:hover {
+            background: #45a049;
+        }
+        form {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #f2f2f2;
+            border-radius: 5px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health Experience Blogs</h1>
+        <p>Find and share real-life experiences with different health challenges.</p>
+    </header>
+    <nav>
+        <a href="#skingraft">Skin Graft</a>
+        <a href="#cancer">Cancer</a>
+        <a href="#breakingbones">Breaking Bones</a>
+        <a href="#diabetes">Diabetes</a>
+        <a href="#anorexia">Anorexia & Bulimia</a>
+        <a href="#depression">Depression</a>
+        <a href="#adhd">ADHD</a>
+        <a href="#autism">Autism</a>
+        <a href="#ms">Multiple Sclerosis</a>
+        <a href="#blindness">Blindness</a>
+    </nav>
+    <div class="container">
+        <div id="skingraft" class="blog-section">
+            <h2>Skin Graft</h2>
+            <p>Share and read blogs about skin graft experiences contributed by our users.</p>
+        </div>
+        <div id="cancer" class="blog-section">
+            <h2>Cancer</h2>
+            <p>Explore blogs about living with and overcoming cancer shared by others.</p>
+        </div>
+        <div id="breakingbones" class="blog-section">
+            <h2>Breaking Bones</h2>
+            <p>Read and share stories about recovering from broken bones.</p>
+        </div>
+        <div id="diabetes" class="blog-section">
+            <h2>Diabetes</h2>
+            <p>Find blogs about managing life with diabetes from our community.</p>
+        </div>
+        <div id="anorexia" class="blog-section">
+            <h2>Anorexia & Bulimia</h2>
+            <p>Connect with personal accounts of dealing with eating disorders.</p>
+        </div>
+        <div id="depression" class="blog-section">
+            <h2>Depression</h2>
+            <p>Learn from others' experiences with depression and mental health.</p>
+        </div>
+        <div id="adhd" class="blog-section">
+            <h2>ADHD</h2>
+            <p>Read blogs about life with ADHD.</p>
+        </div>
+        <div id="autism" class="blog-section">
+            <h2>Autism</h2>
+            <p>Discover stories from individuals and families affected by autism.</p>
+        </div>
+        <div id="ms" class="blog-section">
+            <h2>Multiple Sclerosis</h2>
+            <p>Personal blogs about living with multiple sclerosis.</p>
+        </div>
+        <div id="blindness" class="blog-section">
+            <h2>Blindness</h2>
+            <p>Experiences and insights into life with blindness.</p>
+        </div>
+        <div class="submit-blog">
+            <p>Have a blog to share? Use the form below or <a href="mailto:youremail@example.com">email us</a>.</p>
+            <form action="/submit" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="topic">Blog Topic:</label>
+                <input type="text" id="topic" name="topic" required>
+
+                <label for="blog">Blog Content or Link:</label>
+                <textarea id="blog" name="blog" rows="6" required></textarea>
+
+                <button type="submit">Submit Blog</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Health Experience Blogs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
