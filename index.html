@@ -6,11 +6,11 @@
     <title>Health Experience Blogs</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Comic Sans MS', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background: linear-gradient(to bottom, #87CEFA, #FFFFFF);
         }
         header {
             background: linear-gradient(90deg, #FF5733, #FFC300);
@@ -18,11 +18,6 @@
             padding: 2rem 0;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            animation: glow 3s infinite;
-        }
-        @keyframes glow {
-            0%, 100% { text-shadow: 0 0 20px #FFC300; }
-            50% { text-shadow: 0 0 40px #FF5733; }
         }
         nav {
             display: flex;
@@ -42,48 +37,41 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 1rem;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .blog-section {
             margin: 2rem 0;
             padding: 1rem;
             border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-        .blog-section:nth-child(1) {
+        .blog-section:nth-child(odd) {
             background: #FFCCCC;
         }
-        .blog-section:nth-child(2) {
+        .blog-section:nth-child(even) {
             background: #CCFFCC;
         }
-        .blog-section:nth-child(3) {
-            background: #CCCCFF;
-        }
-        .blog-section:nth-child(4) {
-            background: #FFFFCC;
-        }
-        .blog-section:nth-child(5) {
-            background: #FFCCFF;
-        }
-        .blog-section:nth-child(6) {
-            background: #CCFFFF;
-        }
-        .blog-section:nth-child(7) {
-            background: #FFD700;
-        }
-        .blog-section:nth-child(8) {
-            background: #FFB6C1;
-        }
-        .blog-section:nth-child(9) {
-            background: #98FB98;
-        }
-        .blog-section:nth-child(10) {
-            background: #ADD8E6;
-        }
         .blog-section h2 {
-            color: #FF5733;
-            border-bottom: 2px solid #FF5733;
+            color: #0000FF;
+            border-bottom: 2px solid #0000FF;
             padding-bottom: 0.5rem;
+        }
+        .blog-box {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            background: #FFFFFF;
+        }
+        .blog-box a {
+            color: #0000FF;
+            text-decoration: none;
+        }
+        .blog-box a:hover {
+            color: #FF69B4;
+        }
+        .blog-box p {
+            margin-top: 0.5rem;
+            font-weight: bold;
         }
         footer {
             text-align: center;
@@ -137,45 +125,47 @@
     <div class="container">
         <div id="skingraft" class="blog-section">
             <h2>Skin Graft</h2>
-            <p>Share and read blogs about skin graft experiences contributed by our users.</p>
-            <p><a href="https://www.myskingraft.com" target="_blank">www.myskingraft.com</a></p>
-            <p>This blog shares an inspiring journey of receiving skin grafts on knees after burning them with boiling water.</p>
+            <p><strong>Share and read blogs about skin graft experiences contributed by our users.</strong></p>
+            <div class="blog-box">
+                <a href="https://www.myskingraft.com" target="_blank">www.myskingraft.com</a>
+                <p>This blog shares an inspiring journey of receiving skin grafts on knees after burning them with boiling water.</p>
+            </div>
         </div>
         <div id="cancer" class="blog-section">
             <h2>Cancer</h2>
-            <p>Explore blogs about living with and overcoming cancer shared by others.</p>
+            <p><strong>Explore blogs about living with and overcoming cancer shared by others.</strong></p>
         </div>
         <div id="breakingbones" class="blog-section">
             <h2>Breaking Bones</h2>
-            <p>Read and share stories about recovering from broken bones.</p>
+            <p><strong>Read and share stories about recovering from broken bones.</strong></p>
         </div>
         <div id="diabetes" class="blog-section">
             <h2>Diabetes</h2>
-            <p>Find blogs about managing life with diabetes from our community.</p>
+            <p><strong>Find blogs about managing life with diabetes from our community.</strong></p>
         </div>
         <div id="anorexia" class="blog-section">
             <h2>Anorexia & Bulimia</h2>
-            <p>Connect with personal accounts of dealing with eating disorders.</p>
+            <p><strong>Connect with personal accounts of dealing with eating disorders.</strong></p>
         </div>
         <div id="depression" class="blog-section">
             <h2>Depression</h2>
-            <p>Learn from others' experiences with depression and mental health.</p>
+            <p><strong>Learn from others' experiences with depression and mental health.</strong></p>
         </div>
         <div id="adhd" class="blog-section">
             <h2>ADHD</h2>
-            <p>Read blogs about life with ADHD.</p>
+            <p><strong>Read blogs about life with ADHD.</strong></p>
         </div>
         <div id="autism" class="blog-section">
             <h2>Autism</h2>
-            <p>Discover stories from individuals and families affected by autism.</p>
+            <p><strong>Discover stories from individuals and families affected by autism.</strong></p>
         </div>
         <div id="ms" class="blog-section">
             <h2>Multiple Sclerosis</h2>
-            <p>Personal blogs about living with multiple sclerosis.</p>
+            <p><strong>Personal blogs about living with multiple sclerosis.</strong></p>
         </div>
         <div id="blindness" class="blog-section">
             <h2>Blindness</h2>
-            <p>Experiences and insights into life with blindness.</p>
+            <p><strong>Experiences and insights into life with blindness.</strong></p>
         </div>
         <div class="submit-blog">
             <p>Have a blog to share? Use the form below to submit your story!</p>
