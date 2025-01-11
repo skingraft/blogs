@@ -38,7 +38,7 @@
                 text-shadow: 0 0 20px orange;
             }
         }
-        .intro {
+        .intro-form {
             background: #ffc1e3;
             border: 2px solid #ff69b4;
             border-radius: 10px;
@@ -47,6 +47,31 @@
             max-width: 800px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
+            color: white;
+        }
+        .intro-form form {
+            margin-top: 1.5rem;
+        }
+        .intro-form input, .intro-form textarea, .intro-form button {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .intro-form input, .intro-form textarea {
+            background: white;
+            color: black;
+        }
+        .intro-form button {
+            background: #FF5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .intro-form button:hover {
+            background: #FFC300;
         }
         .nav-buttons {
             display: flex;
@@ -83,13 +108,12 @@
             color: white;
         }
         .blog-section:nth-child(even) {
-            background-color: #dba6f0;
+            background-color: #5c5cff;
             background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
             color: white;
         }
         .blog-section h2 {
-            background-color: #eda4dc;
-            background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+            background-color: #5c5cff;
             border-bottom: 2px solid #FFD700;
             padding-bottom: 0.5rem;
         }
@@ -120,34 +144,6 @@
             color: white;
             margin-top: 2rem;
         }
-        form {
-            margin: 2rem 0;
-            padding: 1rem;
-            background: #d985c5;
-            border-radius: 5px;
-            color: white;
-        }
-        form input, form textarea, form button {
-            width: 100%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form input, form textarea {
-            background: white;
-            color: black;
-        }
-        form button {
-            background: #FF5733;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        form button:hover {
-            background: #FFC300;
-        }
     </style>
 </head>
 <body>
@@ -156,7 +152,22 @@
         <p>Find and share real-life experiences with different health challenges.</p>
     </header>
 
-    
+    <div class="intro-form">
+        <p>There are many great blogs out there about different challenges that could be so helpful and informative 
+            to many of us who share those conditions, but alas they are often difficult to find, especially when we need them most. 
+            This website's goal is to make sure this stops happening. Please help me make this website the website I would like it 
+            to be by sharing your own precious stories! Feel free to also suggest a different health challenge that is not already on
+            the website, and I'll add it!</p>
+        <form action="https://formsubmit.co/example" method="POST">
+            <label for="bloglink">Blog Link:</label>
+            <input type="text" id="bloglink" name="bloglink" required>
+
+            <label for="description">Brief Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit Blog</button>
+        </form>
+    </div>
 
     <div class="nav-buttons">
         <a href="#adhd">ADHD</a>
@@ -180,27 +191,6 @@
         <a href="#rarediseases">Rare Diseases</a>
         <a href="#skingraft">Skin Graft</a>
         <a href="#stroke">Stroke</a>
-    </div>
-
-
-    
-    <div class="container">
-        <div class="intro">
-        <p>There are many great blogs out there about different challenges that could be so helpful 
-            and informative to many of us who share those conditions, but alas they are often difficult to find,
-            especially when we need them most. This website's goal is to make sure this stops happening. 
-            Please help me make this website the website I would like it to be by sharing your own precious stories! 
-            Feel free to also suggest a different health challenge that is not already on the website, and I'll add it!</p>
-    </div>
-        <form action="https://formsubmit.co/example" method="POST">
-            <label for="bloglink">Blog Link:</label>
-            <input type="text" id="bloglink" name="bloglink" required>
-
-            <label for="description">Brief Description:</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
-
-            <button type="submit">Submit Blog</button>
-        </form>
     </div>
 
     <div class="container">
@@ -301,7 +291,6 @@
     </footer>
 </body>
 </html>
-
 
 
 
