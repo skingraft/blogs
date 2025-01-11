@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,15 +52,23 @@
         }
         .intro-form form {
             margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
         }
-        .intro-form input, .intro-form textarea, .intro-form button {
-            width: 50%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .intro-form form div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 1rem;
         }
         .intro-form input, .intro-form textarea {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             background: white;
             color: #111178;
         }
@@ -69,6 +78,8 @@
             border: none;
             cursor: pointer;
             transition: background 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
         }
         .intro-form button:hover {
             background: #FFC300;
@@ -125,7 +136,6 @@
             padding: 1rem;
             margin-top: 1rem;
             border-radius: 5px;
-           
         }
         .blog-box a {
             color: #eda4dc;
@@ -176,6 +186,7 @@
         <a href="#skingraft">Skin Graft</a>
         <a href="#stroke">Stroke</a>
     </div>
+
     <div class="intro-form">
         <p>There are many great blogs out there about different challenges that could be so helpful and informative 
             to many of us who share those conditions, but alas they are often difficult to find, especially when we need them most. 
@@ -183,15 +194,18 @@
             to be by sharing your own precious stories! Feel free to also suggest a different health challenge that is not already on
             the website, and I'll add it!</p>
         <form action="https://formsubmit.co/example" method="POST">
-            <label for="bloglink">Blog Link:</label>
-            <input type="text" id="bloglink" name="bloglink" required>
-
-            <label for="description">Brief Description:</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
-
+            <div>
+                <label for="bloglink">Blog Link:</label>
+                <input type="text" id="bloglink" name="bloglink" required>
+            </div>
+            <div>
+                <label for="description">Brief Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
             <button type="submit">Submit Blog</button>
         </form>
     </div>
+
 
     
 
