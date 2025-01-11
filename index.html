@@ -38,61 +38,47 @@
                 text-shadow: 0 0 20px orange;
             }
         }
-        .intro-form {
-            background: #e693d3;
-            border: 2px solid #ff69b4;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1rem auto;
-            max-width: 70%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            color: white;
-        }
-        .intro-form form {
-            margin-top: 1rem;
-        }
-        .intro-form input, .intro-form textarea, .intro-form button {
-            width: 50%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            align-self: center
-        }
-        .intro-form input, .intro-form textarea {
-            background: white;
-            color: #111178;
-        }
-        .intro-form button {
-            background: #3c3c99;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            align-self: center;
-        }
-        .intro-form button:hover {
-            background: #FFC300;
-        }
-        .nav-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin: 1rem 0;
-        }
-        .nav-buttons a {
-            text-decoration: none;
-            color: white;
-            background: #3c3c99;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        .nav-buttons a:hover {
-            background: #5c5cff;
-        }
+
+.intro-form form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.intro-form form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.intro-form input, .intro-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: #111178;
+}
+
+.intro-form button {
+    align-self: center;
+    background: #3c3c99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+.intro-form button:hover {
+    background: #FFC300;
+}
+
+
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -201,25 +187,7 @@
 
 
 
-        <div class="intro-form">
-        <p>There are many great blogs out there about different challenges that could be so helpful and informative 
-            to many of us who share those conditions, but alas they are often difficult to find, especially when we need them most. 
-            This website's goal is to make sure this stops happening. Please help me make this website the website I would like it 
-            to be by sharing your own precious stories! Feel free to also suggest a different health challenge that is not already on
-            the website, and I'll add it!</p>
-            
-        <form action="https://formsubmit.co/example" method="POST">
-            <label for="bloglink">Blog Link:</label>
-            <input type="text" id="bloglink" name="bloglink" required>
-
-            <label for="description">Brief Description:</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
-
-            <button type="submit">Submit Blog</button>
-        </form>
-    </div>
-
-    
+  
 
     <div class="container">
         <div id="adhd" class="blog-section">
