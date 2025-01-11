@@ -39,51 +39,47 @@
                 text-shadow: 0 0 20px orange;
             }
         }
-        .intro-form {
-            background: #e693d3;
-            border: 2px solid #ff69b4;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1rem auto;
-            max-width: 70%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            color: white;
-        }
-        .intro-form form {
-            margin-top: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-        .intro-form form div {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            gap: 1rem;
-        }
-        .intro-form input, .intro-form textarea {
-            flex: 1;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background: white;
-            color: #111178;
-        }
-        .intro-form button {
-            background: #3c3c99;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-        }
-        .intro-form button:hover {
-            background: #FFC300;
-        }
+.intro-form form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.intro-form form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+.intro-form input, .intro-form textarea {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: #111178;
+    max-width: 95%;
+}
+.intro-form textarea {
+    resize: none;
+}
+.intro-form button {
+    background: #3c3c99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    align-self: center;
+}
+.intro-form button:hover {
+    background: #FFC300;
+}
+
+
         .nav-buttons {
             display: flex;
             flex-wrap: wrap;
