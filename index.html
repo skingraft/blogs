@@ -218,13 +218,13 @@
         to be by sharing your own precious stories! Feel free to also suggest a different health challenge that is not already on
         the website, and I'll add it!</p>
         
-    <form action="https://formsubmit.co/example" method="POST" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; width: 100%; margin: 0 auto;">
-        <div style="display: flex; align-items: center; gap: 1rem; justify-content: flex-start; width: 60%; margin: 0 auto;">
-            <label for="bloglink" style="min-width: 150px; text-align: right;">Blog Link:</label>
+    <form action="https://formsubmit.co/example" method="POST" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center; width: 100%; max-width: 500px;">
+            <label for="bloglink" style="flex: 0 0 150px; text-align: right;">Blog Link:</label>
             <input type="text" id="bloglink" name="bloglink" required style="flex: 1; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
         </div>
-        <div style="display: flex; align-items: center; gap: 1rem; justify-content: flex-start; width: 60%; margin: 0 auto;">
-            <label for="description" style="min-width: 150px; text-align: right;">Brief Description:</label>
+        <div style="display: flex; align-items: center; gap: 1rem; justify-content: center; width: 100%; max-width: 500px;">
+            <label for="description" style="flex: 0 0 150px; text-align: right;">Brief Description:</label>
             <textarea id="description" name="description" rows="4" required style="flex: 1; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px; resize: none;"></textarea>
         </div>
         <button type="submit" style="padding: 0.5rem 1rem; background: #3c3c99; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s ease;">Submit Blog</button>
