@@ -39,20 +39,43 @@
             }
         }
 
-.intro-form {
-            background: #e693d3;
-            border: 2px solid #ff69b4;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1rem auto;
-            max-width: 70%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            color: white;
-        }
-        .intro-form form {
-            margin-top: 1rem;
-        }
+
+
+
+
+        .intro-form {
+    background: #e693d3;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+.intro-form form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.intro-form form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 70%;
+}
+     .intro-form label {
+    text-align: left;
+    width: auto; /* Let the label size adjust to its content */
+      }
+        
         .intro-form input, .intro-form textarea, .intro-form button {
             width: 50%;
             padding: 0.5rem;
@@ -76,6 +99,9 @@
         .intro-form button:hover {
             background: #FFC300;
         }
+
+
+        
         .nav-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -171,6 +197,7 @@
         <a href="#chronicpain">Chronic Pain</a>
         <a href="#depression">Depression</a>
         <a href="#diabetes">Diabetes</a>
+        <a href="#dislocations">Dislocations</a>
         <a href="#epilepsy">Epilepsy</a>
         <a href="#heartdisease">Heart Disease</a>
         <a href="#hiv">HIV/AIDS</a>
@@ -251,6 +278,11 @@
         <div id="diabetes" class="blog-section">
             <h2>Diabetes</h2>
             <p><strong>Find blogs about managing life with diabetes from our community.</strong></p>
+        </div>
+
+        <div id="dislocations" class="Dislocations">
+            <h2>Dislocations</h2>
+            <p><strong>FRead and share stories about recovering from dislocations.</strong></p>
         </div>
         <div id="epilepsy" class="blog-section">
             <h2>Epilepsy</h2>
