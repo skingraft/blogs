@@ -42,8 +42,7 @@
 
 
 
-
-        .intro-form {
+.intro-form {
     background: #e693d3;
     border: 2px solid #ff69b4;
     border-radius: 10px;
@@ -60,50 +59,49 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem; /* More spacing between form elements */
 }
 
 .intro-form form div {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 70%;
+    justify-content: flex-start; /* Align label and input */
+    width: 100%;
+    max-width: 600px; /* Ensure consistency across devices */
+    margin: 0 auto;
 }
-     .intro-form label {
-    text-align: left;
-    width: auto; /* Let the label size adjust to its content */
-      }
-        
-        .intro-form input, .intro-form textarea, .intro-form button {
-            width: 50%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            align-self: center
-            align-items: center;
-        }
-        .intro-form input, .intro-form textarea {
-            background: white;
-            color: #111178;
-        }
-        .intro-form button {
-            background: #3c3c99;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            align-self: center;
-        }
-       
-      
-    .intro-form button:hover {
-        background: #FFC300; /* Changes the background to yellow when hovered */
-        color: #111; /* Changes the text color to black when hovered */
-    }
 
+.intro-form label {
+    text-align: right; /* Align text to the right */
+    width: 150px; /* Fixed width for consistent alignment */
+    margin-right: 1rem; /* Spacing between label and input */
+}
+
+.intro-form input, .intro-form textarea {
+    flex: 1;
+    max-width: 400px; /* Consistent input width */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: #111178;
+}
+
+.intro-form button {
+    width: 200px; /* Fixed width for consistent centering */
+    padding: 0.5rem;
+    background: #3c3c99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.intro-form button:hover {
+    background: #FFC300; /* Changes the background to yellow when hovered */
+    color: #111; /* Changes the text color to black when hovered */
+}
 
 
 
@@ -216,28 +214,28 @@
         <a href="#stroke">Stroke</a>
     </div>
 
-    <div class="intro-form">
+    
+<div class="intro-form">
     <p>There are many great blogs out there about different challenges that could be so helpful and informative 
         to many of us who share those conditions, but alas they are often difficult to find, especially when we need them most. 
         This website's goal is to make sure this stops happening. Please help me make this website the website I would like it 
         to be by sharing your own precious stories! Feel free to also suggest a different health challenge that is not already on
         the website, and I'll add it!</p>
         
-    <form action="https://formsubmit.co/maggie11235@gmail.com" method="POST" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; width: 100%; margin: 0 auto;">
-        <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 500px;">
-            <label for="bloglink" style="min-width: 150px; text-align: right;">Blog Link:</label>
-            <input type="text" id="bloglink" name="bloglink" required style="flex: 1; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+    <form action="https://formsubmit.co/maggie11235@gmail.com" method="POST">
+        <div>
+            <label for="bloglink">Blog Link:</label>
+            <input type="text" id="bloglink" name="bloglink" required>
         </div>
-        <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 500px;">
-            <label for="description" style="min-width: 150px; text-align: right;">Brief Description:</label>
-            <textarea id="description" name="description" rows="4" required style="flex: 1; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px; resize: none;"></textarea>
+        <div>
+            <label for="description">Brief Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
         </div>
-        <button type="submit" style="padding: 0.4rem 1rem; background: #3c3c99; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s ease;">Submit Blog</button>
+        <button type="submit">Submit Blog</button>
     </form>
 </div>
 
 
-        
 
     <div class="container">
         <div id="adhd" class="blog-section">
