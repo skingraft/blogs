@@ -22,14 +22,29 @@
             background: #f5df51;
             background-image: url('https://www.transparenttextures.com/patterns/basketball.png');
         }
-        header {
-            background: #e693d3;
-            background-image: url('https://www.transparenttextures.com/patterns/basketball.png');            
-            color: yellow;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+
+
+header {
+    background: #e693d3;
+    background-image: url('https://www.transparenttextures.com/patterns/basketball.png');            
+    color: yellow;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* This allows for positioning the logo */
+}
+
+/* Styling for the logo */
+header .header-logo {
+    position: absolute;
+    right: 20px; /* 20px from the right edge */
+    top: 50%; /* Vertically center it */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    width: 60px; /* Adjust the size of your logo */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+      
         header h1 {
             font-size: 3.5rem;
             text-shadow: 2px 2px 5px #000;
@@ -47,7 +62,6 @@
                 text-shadow: 0 0 20px orange;
             }
         }
-
 
 
 
@@ -194,10 +208,14 @@
     </style>
 </head>
 <body>
+    
     <header>
-        <h1>What have you been going through?</h1>
-        <p>Find and share real-life experiences with different health challenges.</p>
-    </header>
+    <h1>What have you been going through?</h1>
+    <p>Find and share real-life experiences with different health challenges.</p>
+    <!-- Logo added here -->
+    <img src="My.png" alt="Logo" class="header-logo">
+</header>
+
     
 <div class="nav-buttons">
         <a href="#adhd">ADHD</a>
