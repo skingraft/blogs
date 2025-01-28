@@ -31,10 +31,17 @@ header {
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between the text and logo */
-    align-items: center; /* Vertically center content */
-    padding-right: 60px; /* Add space for logo */
+    position: relative; /* This allows for positioning the logo */
+}
+
+/* Styling for the logo */
+header .header-logo {
+    position: absolute;
+    right: 5px; /* 20px from the right edge */
+    top: 10%; /* Vertically center it */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    width: 1000px; /* Adjust the size of your logo */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 header h1 {
@@ -48,11 +55,6 @@ header p {
     margin-top: 1rem;
 }
 
-/* Styling for the logo */
-header .header-logo {
-    width: 800px; /* Adjust the size of your logo */
-    height: auto; /* Maintain the aspect ratio */
-}
 
         @keyframes glow {
             from {
