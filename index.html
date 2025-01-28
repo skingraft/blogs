@@ -24,38 +24,23 @@
         }
 
 
-header {
-    background: #e693d3;
-    background-image: url('https://www.transparenttextures.com/patterns/basketball.png');            
-    color: yellow;
-    padding: 2rem 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative; /* This allows for positioning the logo */
-}
-
-/* Styling for the logo */
-header .header-logo {
-    position: absolute;
-    right: 60px; /* 20px from the right edge */
-    top: 100%; /* Vertically center it */
-    transform: translateY(-50%); /* Adjust for perfect centering */
-    width: 1000px; /* Adjust the size of your logo */
-    height: auto; /* Maintain the aspect ratio */
-}
-
-header h1 {
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 5px #000;
-    animation: glow 1.5s infinite alternate;
-}
-
-header p {
-    font-size: 1.8rem;
-    margin-top: 1rem;
-}
-
-
+ header {
+            background: #e693d3;
+            background-image: url('https://www.transparenttextures.com/patterns/basketball.png');            
+            color: yellow;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 5px #000;
+            animation: glow 1.5s infinite alternate;
+        }
+        header p {
+            font-size: 1.8rem;
+            margin-top: 1rem;
+        }
         @keyframes glow {
             from {
                 text-shadow: 0 0 10px yellow;
@@ -64,6 +49,7 @@ header p {
                 text-shadow: 0 0 20px orange;
             }
         }
+
 
 
 
@@ -215,7 +201,7 @@ header p {
     <h1>What have you been going through?</h1>
     <p>Find and share real-life experiences with different health challenges.</p>
     <!-- Logo added here -->
-    <img src="My.png" alt="Logo" class="header-logo">
+    <img src="My.png" alt="Logo" >
 </header>
 
     
