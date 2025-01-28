@@ -31,29 +31,29 @@ header {
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative; /* This allows for positioning the logo */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the text and logo */
+    align-items: center; /* Vertically center content */
+    padding-right: 60px; /* Add space for logo */
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px #000;
+    animation: glow 1.5s infinite alternate;
+}
+
+header p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
 }
 
 /* Styling for the logo */
 header .header-logo {
-    position: absolute;
-    right: 20px; /* 20px from the right edge */
-    top: 50%; /* Vertically center it */
-    transform: translateY(-50%); /* Adjust for perfect centering */
     width: 800px; /* Adjust the size of your logo */
     height: auto; /* Maintain the aspect ratio */
 }
 
-      
-        header h1 {
-            font-size: 3.5rem;
-            text-shadow: 2px 2px 5px #000;
-            animation: glow 1.5s infinite alternate;
-        }
-        header p {
-            font-size: 1.8rem;
-            margin-top: 1rem;
-        }
         @keyframes glow {
             from {
                 text-shadow: 0 0 10px yellow;
