@@ -34,8 +34,19 @@
 
      display: flex;  /* Aligns elements in a row */
     align-items: center; /* Vertically centers elements */
+     flex-direction: column; /* Ensures elements stack vertically */
     
         }
+
+
+
+
+
+
+
+
+
+        
         header h1 {
             font-size: 3.5rem;
             text-shadow: 2px 2px 5px #000;
@@ -60,6 +71,7 @@
 .logo-container img {
     height: 300px; /* Adjust the height to fit well */
     width: auto; /* Keeps aspect ratio */
+    align-self: flex-start; /* Keeps the logo on the left */
 }
 
         /* Hide Logo on Mobile */
