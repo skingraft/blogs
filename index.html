@@ -35,10 +35,45 @@
      display: flex;  /* Aligns elements in a row */
     align-items: center; /* Vertically centers elements */
      flex-direction: column; /* Ensures elements stack vertically */
-    
+    justify-content: space-between; /* Spreads content to left & right */
         }
 
 
+
+
+.header-content {
+    display: flex; 
+    align-items: center; /* Aligns items (logo and text) on the same line */
+    width: 100%;
+}
+
+.logo-container img {
+    height: 300px; /* Adjust the height to fit well */
+    width: auto; /* Keeps aspect ratio */
+    align-self: flex-start; /* Keeps the logo on the left */
+}
+
+        /* Hide Logo on Mobile */
+@media (max-width: 768px) {
+    .logo-container {
+        display: none; /* Hides the logo on mobile screens */
+    }
+}
+
+
+
+
+        
+
+.logo-container {
+    flex: 0 0 auto; /* Keeps logo at its natural size */
+    margin-right: 20px; /* Adds spacing between logo and text */
+}
+
+.text-container {
+    flex: 1; /* Allows text to take up remaining space */
+    text-align: center; /* Centers text */
+}
 
 
 
@@ -68,18 +103,6 @@
 
 
 
-.logo-container img {
-    height: 300px; /* Adjust the height to fit well */
-    width: auto; /* Keeps aspect ratio */
-    align-self: flex-start; /* Keeps the logo on the left */
-}
-
-        /* Hide Logo on Mobile */
-@media (max-width: 768px) {
-    .logo-container {
-        display: none; /* Hides the logo on mobile screens */
-    }
-}
 
 
 
