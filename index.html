@@ -51,6 +51,27 @@
         }
 
 
+
+
+.logo-container img {
+    height: 50px; /* Adjust the height to fit well */
+    width: auto; /* Keeps aspect ratio */
+}
+
+        /* Hide Logo on Mobile */
+@media (max-width: 768px) {
+    .logo-container {
+        display: none; /* Hides the logo on mobile screens */
+    }
+}
+
+
+
+
+
+        
+
+
         .logo-divider {
     display: flex;
     justify-content: center;
@@ -227,6 +248,12 @@
 <body>
     
     <header>
+
+         <div class="logo-container">
+            <a href="index.html">
+                <img src="mystoryheard.png" alt="Logo">
+            </a>
+        </div>
     <h1>What have you been going through?</h1>
     <p>Find and share real-life experiences with different health challenges.</p>
    </header>
