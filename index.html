@@ -54,14 +54,29 @@
         .logo-divider {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: -130px 0 -160px 0; /* Reduces spacing even further */
 }
 
 .logo-divider img {
+     max-width: 100%; /* Ensures the logo scales down on small screens */
+     height: auto; /* Keeps aspect ratio */
     width: 900px; /* Adjust size */
     display: block; /* Ensures no extra spacing from inline display */
     padding: 0;
 }
+
+
+    
+
+
+@media (max-width: 768px) { /* Adjusts for mobile screens */
+    .logo-divider img {
+        width: 80%; /* Makes the logo smaller on phones */
+        /*max-width: 300px; /* Ensures it doesn't get too big */
+    }
+}
+
 
 
 
@@ -107,13 +122,14 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background: white;
-    color: #111178;
+    color: black;
+    font-family: 'Comic Sans MS', sans-serif;
 }
 
 .intro-form button {
     width: 200px; /* Fixed width for consistent centering */
     padding: 0.5rem;
-    background: #3c3c99;
+    background: black;
     color: white;
     font-family: 'Comic Sans MS', sans-serif;
     border: none;
@@ -140,13 +156,14 @@
         .nav-buttons a {
             text-decoration: none;
             color: white;
-            background: #3c3c99;
+            background: black;
             padding: 10px 15px;
             border-radius: 5px;
             transition: background 0.3s ease;
         }
         .nav-buttons a:hover {
-            background: #5c5cff;
+            background: #FFC300;
+            color: black;
         }
 
 
@@ -192,7 +209,7 @@
             text-decoration: none;
         }
         .blog-box a:hover {
-            color: yellow;
+            color: #FFC300;
         }
         .blog-box p {
             margin-top: 0.5rem;
