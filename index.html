@@ -307,30 +307,31 @@
 }
 
 
-       @media (min-width: 768px) { /* Applies on laptops/desktops */
+      @media (min-width: 768px) { /* Applies only on larger screens */
     .intro-form div {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
         width: 100%;
-        max-width: 600px; /* Adjust as needed */
+        max-width: 600px; /* Keeps form neat on larger screens */
     }
 
     .intro-form label {
-        width: auto; /* Label takes only as much space as it needs */
-        text-align: right;
-        flex-shrink: 0; /* Prevents labels from affecting input alignment */
+        width: 150px; /* Fixed width for labels */
+        text-align: right; /* Aligns labels to the right */
+        flex-shrink: 0; /* Prevents labels from resizing */
     }
 
     .intro-form input,
     .intro-form textarea,
     .intro-form select {
-        flex-grow: 1; /* Ensures all input fields are the same width */
-        width: 100%; /* Makes sure they expand fully */
-        max-width: 400px; /* Keeps them aligned and neat */
+        flex-grow: 1; /* Ensures all inputs take equal width */
+        width: 100%;
+        max-width: 400px; /* Keeps inputs aligned */
     }
 }
+
 
 
 
