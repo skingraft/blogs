@@ -284,53 +284,7 @@
         }
  
 
-.intro-form div {
-    display: flex;
-    flex-direction: column; /* Stacks label and input/dropdown */
-    align-items: center; /* Centers them properly */
-    width: 100%;
-    max-width: 500px; /* Ensures it doesn't stretch too wide */
-}
 
-.intro-form label {
-    width: 100%; /* Ensures label doesn't shrink */
-    text-align: left; /* Aligns label text to the left */
-    margin-bottom: 5px; /* Adds spacing below label */
-}
-
-.intro-form select {
-    width: 100%; /* Makes dropdown full width of container */
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: white;
-}
-
-
-      @media (min-width: 768px) { /* Applies only on larger screens */
-    .intro-form div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        width: 100%;
-        max-width: 600px; /* Keeps form neat on larger screens */
-    }
-
-    .intro-form label {
-        width: 150px; /* Fixed width for labels */
-        text-align: right; /* Aligns labels to the right */
-        flex-shrink: 0; /* Prevents labels from resizing */
-    }
-
-    .intro-form input,
-    .intro-form textarea,
-    .intro-form select {
-        flex-grow: 1; /* Ensures all inputs take equal width */
-        width: 100%;
-        max-width: 400px; /* Keeps inputs aligned */
-    }
-}
 
 
 
@@ -381,28 +335,17 @@
         your experiences matter. If you’ve shared your journey online, please submit it here to help others find and connect with it.
         If a particular health challenge isn’t already on the website, feel free to suggest it and I’ll make sure it’s included!</p>
         
-    <form action="https://formsubmit.co/the.myth.hiker@gmail.com" method="POST">
-    <div>
-        <label for="contentlink">Link:</label>
-        <input type="text" id="contentlink" name="contentlink" required>
-    </div>
-    <div>
-        <label for="description">Brief Description:</label>
-        <textarea id="description" name="description" rows="4" required></textarea>
-    </div>
-    <div>
-        <label for="content-type">Type of Content:</label>
-        <select id="content-type" name="content-type" required>
-            <option value="blog">Written Blog</option>
-            <option value="video">Video Blog (YouTube, Instagram, TikTok, etc.)</option>
-            <option value="podcast">Podcast</option>
-            <option value="other">Other</option>
-        </select>
-    </div>
-    <button type="submit">Submit</button>
-</form>
- </div>
-      
+     <form action="https://formsubmit.co/the.myth.hiker@gmail.com" method="POST">
+        <div>
+            <label for="bloglink">Blog/Video/Podcast Link:</label>
+            <input type="text" id="bloglink" name="bloglink" required>
+        </div>
+        <div>
+            <label for="description">Brief Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit Blog</button>
+    </form>
 
     <div class="container">
         <div id="adhd" class="blog-section">
