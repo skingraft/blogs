@@ -322,24 +322,32 @@
 
     
 <div class="intro-form">
-    <p>There are many great blogs out there about different challenges that could be so helpful and informative 
-        to many of us who share those conditions, but alas they are often difficult to find, especially when we need them most. 
-        This website's goal is to make sure this stops happening. Please help me make this website the website I would like it 
-        to be by sharing your own precious stories! Feel free to also suggest a different health challenge that is not already on
-        the website, and I'll add it!</p>
+    <p>There are many great personal stories out there about different health challenges that could be incredibly
+        helpful and informative to those who share those experiences. But too often, they’re difficult to find—especially when we need them most.
+        This website exists to change that. Whether through written blogs, video blogs, podcasts, or any other form of storytelling, 
+        your experiences matter. If you’ve shared your journey online, please submit it here to help others find and connect with it.
+        If a particular health challenge isn’t already on the website, feel free to suggest it and I’ll make sure it’s included!</p>
         
     <form action="https://formsubmit.co/the.myth.hiker@gmail.com" method="POST">
-        <div>
-            <label for="bloglink">Blog Link:</label>
-            <input type="text" id="bloglink" name="bloglink" required>
-        </div>
-        <div>
-            <label for="description">Brief Description:</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
-        </div>
-        <button type="submit">Submit Blog</button>
-    </form>
-</div>
+    <div>
+        <label for="contentlink">Blog/Video/Podcast Link:</label>
+        <input type="text" id="contentlink" name="contentlink" required>
+    </div>
+    <div>
+        <label for="description">Brief Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+    </div>
+    <div>
+        <label for="content-type">Type of Content:</label>
+        <select id="content-type" name="content-type" required>
+            <option value="blog">Written Blog</option>
+            <option value="video">Video Blog (YouTube, Instagram, TikTok, etc.)</option>
+            <option value="podcast">Podcast</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <button type="submit">Submit</button>
+</form>
 
  
       
