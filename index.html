@@ -306,6 +306,27 @@
     background: white;
 }
 
+
+        @media (min-width: 768px) { /* Applies when the screen is wider than 768px (like laptops) */
+    .intro-form div {
+        flex-direction: row; /* Puts label and input on the same line */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .intro-form label {
+        width: auto; /* Allows the label to take up only as much space as it needs */
+        text-align: right; /* Aligns label text to the right */
+        margin-bottom: 0;
+        margin-right: 10px; /* Adds space between label and input */
+    }
+
+    .intro-form select {
+        width: 50%; /* Makes dropdown smaller and aligned */
+    }
+}
+
+
    </style>    
 </head>
 <body>
